@@ -5,6 +5,11 @@ app.controller('ComCtrl', function($scope) {
 	$scope.two = "Is there anyone?";
 	$scope.three = "I think I'm talking to myself.";
 	
+	//Method modified from: https://docs.angularjs.org/guide/controller
+	$scope.add = function(added) {
+		$scope.a = added;
+	}
+	
 	var addCommentFromInputBox = function () {
         var $new_comment;
         if ($(".comment-input input").val() !== "") {

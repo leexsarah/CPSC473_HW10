@@ -15,7 +15,8 @@
     <main ng-app="com">
       <section class='comment-input' ng-controller="ComCtrl">
         <p>{{ message }}</p>
-        <input><button>+</button>
+		<p>{{ a }}</p>
+        <input><button ng-click="add('Added.')">+</button>
       </section>
 
       <section class='comments' ng-controller="ComCtrl">
