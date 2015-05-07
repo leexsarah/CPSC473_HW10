@@ -1,3 +1,9 @@
+// Client-side code
+/* jshint browser: true, jquery: true, curly: true, eqeqeq: true, forin: true, immed: true, indent: 4, latedef: true, newcap: true, nonew: true, quotmark: double, strict: true, undef: true, unused: true */
+ 
+// Server-side code
+/* jshint node: true, curly: true, eqeqeq: true, forin: true, immed: true, indent: 4, latedef: true, newcap: true, nonew: true, quotmark: double, strict: true, undef: true, unused: true */
+
 var app = angular.module('com', []);
 app.controller('ComCtrl', function($scope) {
 	$scope.message = "Add your comment: ";
@@ -8,7 +14,7 @@ app.controller('ComCtrl', function($scope) {
 	//Method modified from: https://docs.angularjs.org/guide/controller
 	$scope.add = function(added) {
 		$scope.a = added;
-	}
+	};
 	
 	var addCommentFromInputBox = function () {
         var $new_comment;
@@ -21,7 +27,7 @@ app.controller('ComCtrl', function($scope) {
         }
     };
 
-    $(".comment-input button").on("click", function (event) {
+    $(".comment-input button").on("click", function () {
         addCommentFromInputBox();
     });
 
